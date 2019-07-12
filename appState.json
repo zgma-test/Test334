@@ -1,0 +1,98 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ad7793c2-26d9-490c-8f5d-d7f532f7078e": {
+        "id": "ad7793c2-26d9-490c-8f5d-d7f532f7078e",
+        "parent": null,
+        "name": "Test334",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c8aa698a-e8a7-4fb9-a3bc-a4adb0dc1590",
+          "4305d8d5-9dc4-41d7-b7d3-b62c6c7e6a7b"
+        ],
+        "isRemovable": false,
+        "filePath": "Test334"
+      },
+      "c8aa698a-e8a7-4fb9-a3bc-a4adb0dc1590": {
+        "id": "c8aa698a-e8a7-4fb9-a3bc-a4adb0dc1590",
+        "parent": "ad7793c2-26d9-490c-8f5d-d7f532f7078e",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Test334/lambda.js",
+        "code": "let util = require('./util');\n\nexports.handler = function(event, context, callback) {\n    \n    util.printGreeting();\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "25e928f7-7522-462b-8294-c93273ff1fb0": {
+            "id": "25e928f7-7522-462b-8294-c93273ff1fb0",
+            "name": "Unnamed event",
+            "functionId": "c8aa698a-e8a7-4fb9-a3bc-a4adb0dc1590",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "4305d8d5-9dc4-41d7-b7d3-b62c6c7e6a7b": {
+        "id": "4305d8d5-9dc4-41d7-b7d3-b62c6c7e6a7b",
+        "parent": "ad7793c2-26d9-490c-8f5d-d7f532f7078e",
+        "name": "util.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Test334/util.js",
+        "code": "module.exports = {\n    printGreeting: () => {\n        console.log(\"Hello World!\");\n    }\n}"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "ad7793c2-26d9-490c-8f5d-d7f532f7078e",
+    "openFiles": [
+      "c8aa698a-e8a7-4fb9-a3bc-a4adb0dc1590",
+      "4305d8d5-9dc4-41d7-b7d3-b62c6c7e6a7b"
+    ],
+    "currentFileId": "4305d8d5-9dc4-41d7-b7d3-b62c6c7e6a7b",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "Test334",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1562923776583
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "Test334",
+      "url": "https://github.com/zgma-test/Test334"
+    }
+  }
+}
